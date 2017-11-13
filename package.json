@@ -1,17 +1,24 @@
 {
   "name": "portfolio-site",
   "version": "1.0.0",
-  "description": "Cameron McEvenue's Portfolio Site",
-  "main": "index.js",
+  "description": "",
+  "main": "dist/bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server",
+    "prod": "webpack -p"
   },
   "keywords": [],
   "author": "Cameron McEvenue",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.6.1",
     "sass-loader": "^6.0.6",
-    "webpack": "^3.8.1"
+    "style-loader": "^0.19.0",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
   }
 }
