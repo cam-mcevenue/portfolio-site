@@ -1,0 +1,34 @@
+/* This partial contains variables used across the site */
+
+/*** FONTS ***/
+
+///Importing google fonts Open Sans ans Sigmar One.
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Sigmar+One');
+
+/*  Font - Typefaces */
+
+/// Default font, default text style across the site.
+/// @type String
+$font-family-default:  'Open Sans', 'Helvetica', 'sans-serif';
+
+/// Heading font, used for default heading style across the site.
+/// @type String
+$font-family-heading: 'Sigmar One', 'serif';
+
+/// Code font, used for any code samples on the site.
+/// @type String
+$font-family-code: 'Source Code Pro', 'Courier', 'mono';
+
+/* Font - Weights */
+
+/// Font weights used all over the code base for text based elements
+/// @type Weight
+$font-light: 300;
+$font-normal: 400;
+$font-bold: 700;
+
+
+/*** COLOURS ***/
+
+$color-black: #000;
+$color-white: #fff;
