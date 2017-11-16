@@ -1,0 +1,63 @@
+//Really small CSS Reset. Only common or problematic elements are reset
+//CREDIT: maxdesign.com.au/articles/css-reset
+
+//Remove margian and padding on key elements
+html, body, ul, ol, li, form, fieldset, legend {
+    margin: 0;
+    padding: 0;
+}
+
+//Remove top margings on headings and paragraphs
+h1 , h2, h3, h4, h5, h6 , p {
+    margin-top: 0;
+}
+
+// Remove fieldset and image borders
+fieldset, img {
+    border: 0;
+}
+
+//Set table borders and spacing
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+//Set caption, table header and table data cells
+caption, th, td {
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+//Apply color to fieldset (to overcome IE color issues
+legend {
+    color: #000;
+}
+
+//Apply font-size and line-height
+input, textarea, select {
+    font-size: 110%;
+    line-height: 1.1;
+}
+
+//Remove list bullets
+li {
+    list-style: none;
+}
+
+//Apply border-bottom and cursor to abbr and acronym
+abbr, acronym {
+    border-bottom: .1em dotted;
+    cursor: help;
+}
+
+//Vertical-align sup and sub to avoid line-height issues
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+

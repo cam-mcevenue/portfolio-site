@@ -1,8 +1,59 @@
 /* This partial contains base HTML element styles */
 
+//Setting base font-size to make REM unit calculation easy
+html {
+    font-size: 10px; 
+}
+
+
 body {
-    font-family: $sans-serif;
-    font-weight: #light;
-    color: green;
-    background: #000;
+    font-family: $font-family-default;
+    font-weight: $font-light;
+
+}
+
+header {
+
+}
+
+main {
+
+}
+
+aside {
+
+}
+
+section {
+
+}
+
+article {
+
+}
+
+aside {
+
+}
+
+footer {
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-heading;
+    font-weight: $font-normal;
+}
+
+p {
+
+}
+
+//Add anchor tag underline hover effect by default
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
