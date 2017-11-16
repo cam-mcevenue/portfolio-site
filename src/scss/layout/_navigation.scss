@@ -1,0 +1,29 @@
+
+//Might have different nav elements on site
+//This class is for stylign the main navigation
+.main-nav {
+    
+}
+
+//Set as flex container
+.main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+//Ensure flex items grow to fill hthe available space and are 
+//evenly distributed
+.main-nav__nav-item  {
+    display: inline-block;
+    flex: 1 auto;
+    text-align: center;
+}
+
+//ensure the anchor fill the full parent element
+.main-nav a {
+    display: block;
+}
+
+.main-nav i {
+
+}
