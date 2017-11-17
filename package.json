@@ -5,6 +5,7 @@
   "main": "dist/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:compile": "webpack",
     "dev": "webpack-dev-server",
     "prod": "webpack -p"
   },
