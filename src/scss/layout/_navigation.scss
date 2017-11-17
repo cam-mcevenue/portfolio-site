@@ -11,19 +11,55 @@
     flex-wrap: wrap;
 }
 
-//Ensure flex items grow to fill hthe available space and are 
+//Ensure flex items grow to fill the available space and are 
 //evenly distributed
 .main-nav__nav-item  {
     display: inline-block;
-    flex: 1 auto;
+    flex: 1 1 33.333%;
     text-align: center;
 }
 
-//ensure the anchor fill the full parent element
-.main-nav a {
-    display: block;
+//Separate nav buttons by border line. Must recalculate
+//flex basis to take account for 2px of border width
+//on the middle button
+.main-nav__nav-item:nth-of-type(2){
+    border-left: 1px solid #f9f9f9;
+    border-right: 1px solid #f7f7f7;
+    flex-basis: calc(33.333% - 2px);
 }
 
-.main-nav i {
+//ensure the anchor fill the full parent element
+.main-nav__nav-item a {
+    display: block;
+    padding: 5px 0;
+    color: $color-nav
+}
 
+//Change the fill to match the hover and focus colors
+//of the anchor tag text
+.main-nav__nav-item a:hover > svg, .main-nav__nav-item a:focus > svg {
+    fill: red;
+}
+
+//Override default anchor style
+.main-nav__nav-item a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+//Add a box shadow to make focused link look pushed
+//Change color to same as link hover color
+.main-nav__nav-item a:focus {
+    background: #f7f7f7;
+    color: red;
+    box-shadow: inset 0px 0px 8px #ccc;
+}
+
+//Put nav item text in span so that I could
+//add an svg icon on top. That is the reason
+//for setting to block display.
+.main-nav__nav-item span {
+    display: block;
+    font-family: $font-family-default;
+    font-size: 2.1rem;
 }
