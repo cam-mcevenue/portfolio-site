@@ -1,0 +1,19 @@
+//Style for logo element
+.logo {
+    padding: 10px;
+    text-align: center;
+    background-color: inherit;
+}
+
+//Add box shadow to page header
+.page-header {
+    box-shadow: 0px 8px 8px -8px #ccc;
+}
+
+//Make header stick to top of page
+.page-header--sticky {
+    background-color: $color-header-background;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0px;
+}
